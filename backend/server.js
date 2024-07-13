@@ -10,6 +10,9 @@ connectDB();
 
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Welcome to the Country Details API');
+  });
 app.use(cors());
 app.use(express.json());
 
