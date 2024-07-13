@@ -1,0 +1,32 @@
+.country-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  
+  .country-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .country-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .country-card h2 {
+    margin: 0.5em 0;
+  }
+  
+  .country-card p {
+    margin: 0.5em 0;
+  }
+  
