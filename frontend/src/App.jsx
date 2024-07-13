@@ -1,4 +1,5 @@
- import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// src/App.jsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
 import HomePage from './pages/HomePage';
 import FavoritesPage from './pages/FavoritesPage';
@@ -11,12 +12,12 @@ const App = () => {
     <AuthProvider>
       <Router>
         <Header />
-        <Switch>
-          <Route path="/" component={HomePage} exact />
-          <Route path="/favorites" component={FavoritesPage} />
-          <Route path="/login" component={Login} />
-          <Route path="/register" component={Register} />
-        </Switch>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/favorites" element={<FavoritesPage />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
       </Router>
     </AuthProvider>
   );

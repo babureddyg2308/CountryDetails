@@ -7,17 +7,18 @@ const Header = () => {
 
   return (
     <header>
-      <nav>
-        <Link to="/">Home</Link>
+      <nav style={{ backgroundColor: "blue", height: "50px", textAlign: "center", color: 'white',display: 'flex',
+  justifyContent: 'space-around' , alignItems:'center'}}>
+        <Link to="/" style={{textDecoration:'none', color:'white'}}>Home</Link>
         {user ? (
           <>
-            <Link to="/favorites">Favorites</Link>
+            <Link to="/favorites" style={{textDecoration:'none', color:'white'}}>Favorites</Link>
             <button onClick={logout}>Logout</button>
           </>
         ) : (
           <>
-            <Link to="/login">Login</Link>
-            <Link to="/register">Register</Link>
+            <Link to="/login" style={{textDecoration:'none', color:'white'}}>Login</Link>
+            <Link to="/register" style={{textDecoration:'none', color:'white'}}>Register</Link>
           </>
         )}
       </nav>

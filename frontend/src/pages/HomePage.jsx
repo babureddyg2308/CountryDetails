@@ -28,15 +28,15 @@ const HomePage = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSearch}>
+    <div><br />
+      <form onSubmit={handleSearch}><br />
         <input
           ref={inputRef}
           type="text"
           placeholder="Currency Code"
           value={currencyCode}
           onChange={(e) => setCurrencyCode(e.target.value)}
-        />
+        /> <br /><br />
         <button type="submit">Search</button>
       </form>
       <div>
